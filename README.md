@@ -1,2 +1,2 @@
-# Nashville-Housing-Data---Data-Cleaning-Project
+# Nashville Housing Data (Data Cleaning Project)
 Data Cleaning Project on Nashville Housing Data
