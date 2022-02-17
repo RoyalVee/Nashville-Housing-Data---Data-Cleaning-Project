@@ -13,6 +13,32 @@ GROUP BY YearBuilt
 ORDER BY 2 DESC;
 
 
+
+-- Formate the SaleDate Column to Date type
+
+SELECT nh.SaleDate, CONVERT(Date, nh.SaleDate)
+FROM [Nashville Housing]..Sheet1$ nh
+
+
+Update [Nashville Housing]..Sheet1$
+SET SaleDate = CONVERT(Date, SaleDate)
+
+SELECT nh.SaleDate
+FROM [Nashville Housing]..Sheet1$ nh
+
+ALter Table [Nashville Housing]..Sheet1$
+Add SaleDateFormated Date;
+
+
+Update [Nashville Housing]..Sheet1$
+SET SaleDateFormated = CONVERT(Date, SaleDate)
+
+
+SELECT nh.SaleDateFormated
+FROM [Nashville Housing]..Sheet1$ nh
+
+
+
 -- Populate Property Address Data
 
 
