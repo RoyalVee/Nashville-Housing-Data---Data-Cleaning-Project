@@ -1,2 +1,2 @@
-# Nashville Housing Data (Data Cleaning Project)
-Data Cleaning Project on Nashville Housing Data
+# Nashville Housing price prediction
+This is a Machine Learning model for house sale price prediction in Nashville Area
