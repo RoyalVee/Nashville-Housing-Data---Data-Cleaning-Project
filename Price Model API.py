@@ -3,7 +3,7 @@ Creating the API endpoint for the sale price prediction
 - the following parameters will be required from the API endpoint entry ('Property Area', 'sale Date',
         'Acreage', 'LandValue', 'BuildingValue',
        'TotalValue', 'YearBuilt', 'Bedrooms', 'FullBath', 'HalfBath')
-- the Api will return serialized json with the predicted sale price for the house details provide
+- the Api will return serialized json with the predicted sale price for the house details provided
 """
 
 # import the required packages
@@ -65,21 +65,21 @@ class sale_price(Resource):
         args = house_details_arg.parse_args()
 
         Property_Area = args['Property Area']
-        Sale_Date = args['Property Area']
-        Acreage = args['Property Area']
-        LandValue = args['Property Area']
-        BuildingValue = args['Property Area']
-        TotalValue = args['Property Area']
-        YearBuilt = args['Property Area']
-        Bedrooms = args['Property Area']
-        FullBath = args['Property Area']
-        HalfBath = args['Property Area']
+        Sale_Date = args['Sale Date']
+        Acreage = args['Acreage']
+        LandValue = args['LandValue']
+        BuildingValue = args['BuildingValue']
+        TotalValue = args['TotalValue']
+        YearBuilt = args['YearBuilt']
+        Bedrooms = args['Bedrooms']
+        FullBath = args['FullBath']
+        HalfBath = args['HalfBath']
 
         pred_sale_price = get_price(Area= Property_Area, saledate_float= Sale_Date, Acreage= Acreage, LandValue=LandValue,
                                BuildingValue=BuildingValue, TotalValue=TotalValue, YearBuilt=YearBuilt, Bedrooms=Bedrooms,
                                FullBath= FullBath, HalfBath=HalfBath)
 
-        return {"Sale Price" : pred_sale_price}
+        return {"Sale Price" : Property_Area}
 
 
 # Register the resource in the sale api
