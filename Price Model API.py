@@ -13,3 +13,15 @@ import pickle as pk
 import pandas as pd
 import numpy as np
 
+
+
+#create a flask instance for the API
+sale_app = Flask(__name__)
+sale_api = Api(sale_app)
+
+
+
+# initialize the endpoint
+if __name__ == "__main__":
+    sale_app.run(debug=True) # ensure to remove the debugger when moving to production
+
