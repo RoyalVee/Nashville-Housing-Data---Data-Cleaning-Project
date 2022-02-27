@@ -20,6 +20,16 @@ sale_app = Flask(__name__)
 sale_api = Api(sale_app)
 
 
+# Create the Price model resource
+class sale_price(Resource):
+    """"Create the price model methods """
+    def get(self):
+        sale_pred = 12345
+        return {"Sale Price" : sale_pred}
+
+
+# Register the resource in the sale api
+sale_api.add_resource(sale_price, "/sale_prediction")
 
 # initialize the endpoint
 if __name__ == "__main__":
