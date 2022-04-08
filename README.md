@@ -6,7 +6,7 @@ In this project, I made use of Python to build a machine learning model for the 
 - Numpy package
 - Panda package
 - SKlearn
--Pickle
+- Pickle
 
 ## Installation
 If you don't have a working IDE kindly follow this [link](https://docs.anaconda.com/anaconda/install/windows/) to install anaconda on your machine which has all the needed requirements to run the python script.
